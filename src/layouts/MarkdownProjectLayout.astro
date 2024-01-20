@@ -1,0 +1,14 @@
+---
+import Layout from "./Layout.astro";
+import Header from "../components/Header.astro";
+const { frontmatter } = Astro.props;
+---
+<Layout title={frontmatter.title}>
+    <main>
+    <Header/>
+    <h1>{frontmatter.title}</h1>
+    <p>Published on: {frontmatter.pubDate.slice(0,10)}</p>
+    <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+    <slot />
+    </main>
+</Layout>

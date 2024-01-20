@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Header from "../components/Header.astro"
+const allPosts = await Astro.glob('../pages/posts/*.md');
+---
+
+<Layout title="Projets">
+    <main>
+        <Header/>
+        <h1>Quelques uns de nos projets :</h1>
+        {allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+    </main>
+</Layout>
+

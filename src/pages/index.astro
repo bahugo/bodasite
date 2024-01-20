@@ -1,35 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
-// import Card from '../components/Card.astro';
+import Header from '../components/Header.astro';
 ---
 
 <Layout title="BODA architectes">
 	<main>
+        <Header/>
 		<h1>BODA Architectes</h1>
 		<p class="wip">
 			👷🏻‍♀️Site en construction.👷‍♀️
 		</p>
-		<ul role="list" class="link-card-grid">
-			<!-- <Card -->
-   <!--              href="mailto:boda.architectes@gmail.com" -->
-			<!-- 	title="Contact" -->
-			<!-- 	body="boda.architectes@gmail.com" -->
-			<!-- /> -->
-		</ul>
-	</main>
+    </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-		color: black;
-	}
 	.astro-a {
 		position: absolute;
 		top: -32px;
@@ -73,7 +57,7 @@ import Layout from '../layouts/Layout.astro';
 		color: rgb(var(--accent-light));
 	}
 	.link-card-grid {
-		display: grid;
+		display: flex;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 2rem;
 		padding: 0;
