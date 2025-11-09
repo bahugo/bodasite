@@ -2,12 +2,12 @@
 interface Props {
     title: string;
 }
-
-import { Font } from "astro:assets";
+import '@fontsource/twinkle-star';
+// import { Font } from "astro:assets";
 const { title } = Astro.props;
 ---
 
-<Font cssVariable="--font-roboto" preload />
+<!-- <Font cssVariable="--font-roboto" preload /> -->
 
 <html lang="en">
     <head>
@@ -34,7 +34,7 @@ const { title } = Astro.props;
         );
     }
     html {
-        font-family: var(--font-roboto);
+        font-family: "Roboto";
         background: #fffbfb;
         background-size: 224px;
     }
