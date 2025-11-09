@@ -1,65 +1,54 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
 ---
 
 <Layout title="BODA architectes">
-	<main>
-        <Header/>
-		<h1>BODA Architectes</h1>
-		<p class="wip">
-			👷🏻‍♀️Site en construction.👷‍♀️
-		</p>
+    <main>
+        <Header />
+        <h1>boda</h1>
+        <p class=".people">émilie <b>bo</b>nnaire <b>cé</b>cile dalmas</p>
+        <p class=".contact">
+            avenue de Taillebourg 75011 Paris<br />
+            boda.architectes@gmail.com<br />
+            06 71 37 07 30 • 06 50 84 22 93
+        </p>
     </main>
 </Layout>
 
 <style>
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 5rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.wip {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: rgba(var(--accent-light), 12%);
-		padding: 1.5rem;
-		border-radius: 8px;
-		text-align: center;
-	}
-	.wip code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-dark));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.wip strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: flex;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
+    .astro-a {
+        position: absolute;
+        top: -32px;
+        left: 50%;
+        transform: translatex(-50%);
+        width: 220px;
+        height: auto;
+        z-index: -1;
+    }
+    h1 {
+        font-size: 5rem;
+        font-weight: 900;
+        font-style: italic;
+        letter-spacing: 1rem;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    .people {
+        font-size: 0.5rem;
+        <!-- font-weight: lighter; -->
+        <!-- font-variant: thin; -->
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    .contact {
+        font-size: 0.5rem;
+        <!-- font-weight: lighter; -->
+        <!-- font-variant: thin; -->
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 1em;
+    }
 </style>
