@@ -7,8 +7,8 @@ import Header from "../components/Header.astro";
     <main>
         <Header />
         <h1>boda</h1>
-        <p class=".people">émilie <b>bo</b>nnaire cécile <b>da</b>lmas</p>
-        <p class=".contact">
+        <p class="text-light">émilie <b>bo</b>nnaire • cécile <b>da</b>lmas</p>
+        <p class="text-light">
             9 avenue de Taillebourg 75011 Paris<br />
             boda.architectes@gmail.com<br />
             06 71 37 07 30 • 06 50 84 22 93
@@ -17,36 +17,18 @@ import Header from "../components/Header.astro";
 </Layout>
 
 <style>
-    .astro-a {
-        position: absolute;
-        top: -32px;
-        left: 50%;
-        transform: translatex(-50%);
-        width: 220px;
-        height: auto;
-        z-index: -1;
-    }
     h1 {
         font-size: 5rem;
-        font-weight: 900;
+        font-weight: 500;
         font-style: italic;
         letter-spacing: 1rem;
         line-height: 1;
         text-align: center;
         margin-bottom: 1em;
     }
-    .people {
-        font-size: 0.5rem;
-        <!-- font-weight: lighter; -->
-        <!-- font-variant: thin; -->
-        line-height: 1;
-        text-align: center;
-        margin-bottom: 1em;
-    }
-    .contact {
-        font-size: 0.5rem;
-        <!-- font-weight: lighter; -->
-        <!-- font-variant: thin; -->
+    .text-light {
+        font-size: 0.9rem;
+        font-weight: 100;
         line-height: 1;
         text-align: center;
         margin-bottom: 1em;

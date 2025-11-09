@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.5",
-    "@fontsource/twinkle-star": "^5.2.8",
+    "@fontsource-variable/roboto": "^5.2.8",
+    "@fontsource/roboto": "^5.2.8",
     "astro": "^5.15.4",
     "typescript": "^5.9.3"
   },
