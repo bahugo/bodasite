@@ -1,6 +1,6 @@
 import { defineConfig, fontProviders } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://bahugo.github.io',
+  site: 'https://www.boda-architectes.com',
   base: '/bodasite',
 });
