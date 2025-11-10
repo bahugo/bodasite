@@ -6,13 +6,17 @@ import Header from "../components/Header.astro";
 <Layout title="BODA architectes">
     <main>
         <Header />
-        <h1>boda</h1>
-        <p class="text-light">émilie <b>bo</b>nnaire • cécile <b>da</b>lmas</p>
-        <p class="text-light">
-            9 avenue de Taillebourg 75011 Paris<br />
-            boda.architectes@gmail.com<br />
-            06 71 37 07 30 • 06 50 84 22 93
-        </p>
+        <div style="display: grid; place-items: center; ">
+            <h1>boda</h1>
+            <p class="text-light" style="word-spacing:0.7rem">
+                émilie <b>bo</b>nnaire • cécile <b>da</b>lmas
+            </p>
+            <p class="text-light">
+                9 avenue de Taillebourg 75011 Paris<br />
+                boda.architectes@gmail.com<br />
+                06 71 37 07 30 • 06 50 84 22 93
+            </p>
+        </div>
     </main>
 </Layout>
 
@@ -29,7 +33,8 @@ import Header from "../components/Header.astro";
     .text-light {
         font-size: 0.9rem;
         font-weight: 100;
-        line-height: 1;
+        line-height: 1.3;
+
         text-align: center;
         margin-bottom: 1em;
     }
