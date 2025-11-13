@@ -2,7 +2,6 @@
 interface Props {
     title: string;
 }
-import "@fontsource/roboto";
 // Supports weights 100-900
 import "@fontsource-variable/roboto";
 const { title } = Astro.props;
@@ -34,14 +33,24 @@ const { title } = Astro.props;
     }
     html {
         font-family: "Roboto Variable", sans-serif;
+        height: 100%;
         background: #fffbfb;
         background-size: 224px;
     }
+    body {
+        height: 100%;
+    }
     main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: auto;
         padding: 1rem;
         width: 800px;
+        height: 100%;
         max-width: calc(100% - 2rem);
+        max-height: calc(100% - 2rem);
         color: black;
         font-size: 20px;
         line-height: 1.6;
