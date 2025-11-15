@@ -3,11 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import { Icon } from 'astro-icon/components'
 ---
 
-<Layout title="BODA architectes">
+<Layout title="boda">
     <main>
         <h1>boda</h1>
-        <p class="text-light" style="word-spacing:0.7rem">
-            émilie <b>bo</b>nnaire • cécile <b>da</b>lmas
+        <p class="text-light" style="display: flex; word-spacing:0.7rem">
+                <span style="width: 110px">émilie <b><i>bo</i></b>nnaire</span>
+                <span style="width: 30px"> • </span>
+                <span style="width: 110px">cécile <b><i>da</i></b>lmas</span>
         </p>
         <p class="text-light">
             9 avenue de Taillebourg 75011 Paris<br />
@@ -28,7 +30,6 @@ import { Icon } from 'astro-icon/components'
         letter-spacing: 1rem;
         line-height: 1;
         text-align: center;
-        margin-bottom: 1em;
     }
     .text-light {
         font-size: 0.9rem;
